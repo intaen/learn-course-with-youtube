@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7193c9"
+    tools:context=".activity.SplashScreenActivity">
+
+    <ImageView
+        android:id="@+id/splashscreen"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/logo"/>
+
+    <View
+        android:id="@+id/space1"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_below="@+id/splashscreen"
+        android:layout_centerHorizontal="true"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/title"
+        android:layout_below="@+id/space1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:cardBackgroundColor="#0396fd"
+        app:cardCornerRadius="20dp">
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/logo2"/>
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:fontFamily="@font/sen"
+            android:text="BENGONG? BENGONG!"
+            android:textAlignment="center"
+            android:textColor="#ffd86e"
+            android:textSize="23dp"/>
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:id="@+id/space2"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/space2"
+        app:cardBackgroundColor="#ffd86e"
+        app:cardCornerRadius="20dp">
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baloo_regular"
+            android:text="bengong = ['Belajar Ngoding Gratis', Yuk()]"
+            android:textSize="15dp"
+            android:textColor="#0396fd"
+            android:textAlignment="center"/>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
