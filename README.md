@@ -29,14 +29,6 @@ go run main.go
 + Then, open android studio and start emulator, klik l>, wait for awhile...
 + Because the database is empty, we have to add the course
 + So, this is API for BengongApps:
-#### GetAll User
-```sh
-http://localhost:5050/users
-```
-#### GetByID User
-```sh
-http://localhost:5050/user/{id}
-```
 #### SignUp User
 ```sh
 http://localhost:5050/user/signup
@@ -59,6 +51,14 @@ http://localhost:5050/user/login
     "password": "123"
 }
 ```
+#### GetAll User
+```sh
+http://localhost:5050/users
+```
+#### GetByID User
+```sh
+http://localhost:5050/user/{id}
+```
 #### Update User (Put)
 ```sh
 http://localhost:5050/user/{id}
@@ -68,14 +68,6 @@ http://localhost:5050/user/{id}
 http://localhost:5050/user/{id}
 ```
 ----------------------------------
-#### GetAll Course
-```sh
-http://localhost:5050/courses
-```
-#### GetByID Course
-```sh
-http://localhost:5050/course/{id}
-```
 #### Insert Course (Post)
 ```sh
 http://localhost:5050/course
@@ -86,6 +78,14 @@ http://localhost:5050/course
     "lang_img": "http://link_logo_of_prog_lang.png",
 }
 ```
+#### GetAll Course
+```sh
+http://localhost:5050/courses
+```
+#### GetByID Course
+```sh
+http://localhost:5050/course/{id}
+```
 #### Update Course (Put)
 ```sh
 http://localhost:5050/course/{id}
@@ -95,14 +95,6 @@ http://localhost:5050/course/{id}
 http://localhost:5050/course/{id}
 ```
 ----------------------------------
-#### GetAll Topic
-```sh
-http://localhost:5050/topics
-```
-#### GetByID Topic
-```sh
-http://localhost:5050/topic/{id}
-```
 #### Insert Topic (Post)
 ```sh
 http://localhost:5050/topic
@@ -115,6 +107,14 @@ http://localhost:5050/topic
 	"topic_desc": "description_about_the_topic"
 }
 ```
+#### GetAll Topic
+```sh
+http://localhost:5050/topics
+```
+#### GetByID Topic
+```sh
+http://localhost:5050/topic/{id}
+```
 #### Update Topic (Put)
 ```sh
 http://localhost:5050/topic/{id}
@@ -124,10 +124,6 @@ http://localhost:5050/topic/{id}
 http://localhost:5050/topic/{id}
 ```
 Ps. Actually I want to add features like tag some course that user choose, but I still cant make it, but I already prepare the API (GetDataByUser and Insert Data)
-#### GetDataByUser
-```sh
-http://localhost:5050/data/user/{id}
-```
 #### Insert Data (Post)
 ```sh
 http://localhost:5050/data
@@ -137,5 +133,9 @@ http://localhost:5050/data
 	"id_user": 1,
 	"id_course": 2
 }
+```
+#### GetDataByUser
+```sh
+http://localhost:5050/data/user/{id}
 ```
 
