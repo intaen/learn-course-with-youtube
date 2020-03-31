@@ -5,6 +5,7 @@
 So, in this project I made mobile apps about learn coding using youtube video. I name this apps with Bengong because it stands for "BElajar NGodiNg Gratis" or "Learn Code for Free".
 I use two programming language to build this, golang for backend and kotlin for frontend. Stack in this apps are:
 #### Golang:
++ RestAPI
 + Gorm
 + Postgre
 + Env
